@@ -6,6 +6,7 @@ Para descobrir o caminho, executar no python:
 
 import os  
 print(os.getcwd())
-
-
-Atenção: Código configurado para executar sem Chromedriver.
+  
+  
+  
+Atenção: O código contém as dependências para Chromedriver, caso seja necessário.
