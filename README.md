@@ -4,5 +4,5 @@ Arquivo 'challenge.xlsx' deve estar no diretório padrão onde o python é execu
 
 Para descobrir o caminho, executar no python:
 
-import os
+import os  
 print(os.getcwd())
