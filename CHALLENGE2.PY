@@ -47,10 +47,7 @@ logging.info("Arquivo Excel carregado | Registros encontrados: %s", len(df))
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
 
-nav = webdriver.Chrome(
-    service=Service(ChromeDriverManager().install()),
-    options=options
-)
+nav = webdriver.Chrome(options=options)
 
 wait = WebDriverWait(nav, 10)
 
@@ -207,9 +204,9 @@ except Exception as erro:
     print("Desafio finalizado, mas não foi possível capturar o score final.")
 
 
-time.sleep(5)
+time.sleep(3)
 
-### Fecha o navegador após 5 segundos
+### Fecha o navegador após 3 segundos
 nav.quit()
 
 logging.info("Automação encerrada")
